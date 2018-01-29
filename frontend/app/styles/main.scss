@@ -1,0 +1,137 @@
+$icon-font-path: '../fonts/';
+// bower:scss
+// endbower
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+html, body {
+  font-family: 'Arial';
+  color: #000;
+  overflow-y: hidden;
+}
+
+.container {
+  width: 1000px;
+  margin: auto;
+}
+
+.header {
+  .content {
+    height: 100px;
+    background-color: #0b97c4;
+
+    .title {
+      font-size: 32px;
+      text-align: center;
+      padding-top: 30px;
+    }
+  }
+}
+
+.main {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+
+    .aside {
+      background-color: #00b3ee;
+      width: 210px;
+      padding: 20px;
+
+      .title {
+        text-align: center;
+      }
+
+      .nav {
+        list-style: none;
+
+        .item{
+          width: 100%;
+          margin-top: 20px;
+          text-align: center;
+          background-color: #2ECC40;
+          height: 50px;
+          vertical-align: middle;
+
+          .link{
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            padding-top: 15px;
+            text-decoration: none;
+            color: #000;
+            font-weight: 700;
+          }
+
+          &.active{
+            background-color: #ff0000;
+          }
+        }
+      }
+    }
+    .content {
+      width: 750px;
+      overflow-y: scroll;
+
+      .tab{
+        display: none;
+        width: 550px;
+        float: left;
+
+        .title{
+          text-align: center;
+          font-size: 24px;
+          margin-top: 10px;
+        }
+
+        .text {
+          padding: 10px;
+        }
+
+        &.active{
+          display: block;
+        }
+      }
+
+      .articles{
+        width: 180px;
+        float: left;
+
+        .article{
+          width: 180px;
+          background-color: #ff6666;
+          height: 150px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+
+  .content {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    background-color: #0b97c4;
+
+    .title {
+      font-size: 24px;
+      text-align: center;
+      padding-top: 10px;
+    }
+  }
+}
