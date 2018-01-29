@@ -13,7 +13,7 @@ class m171228_055207_create_users_table extends CDbMigration
             'email'  => 'VARCHAR(255) NOT NULL',
             'status'  => 'INT NOT NULL',
             'password'  => 'VARCHAR(255) NOT NULL',
-            'role'  => 'VARCHAR(255) NOT NULL',
+            'role'  => 'VARCHAR(255)',
 
             'UNIQUE KEY `username` (`username`)',
             'UNIQUE KEY `email` (`email`)',
